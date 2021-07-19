@@ -73,7 +73,7 @@ stages:
           - task: AzureWebAppContainer@1
             displayName: Update the web app with the new container
             inputs:
-              azureSubscription: 'Visual Studio Professional(7e09b613-973f-408f-82b0-be727b311aee)'
+              azureSubscription: 'Azure Connection'
               appName: '$(WebAppName)'
               containers: '$(RegistryName)/$(webRepository):latest'
           - task: AzureAppServiceSettings@1
